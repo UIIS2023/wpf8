@@ -1,0 +1,22 @@
+﻿<Window x:Class="Biblioteka.IzdavanjeKnjiga"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Biblioteka"
+        mc:Ignorable="d"
+        Title="IzdavanjeKnjiga" Height="300" Width="300">
+    <Grid x:Name="frmIzdavanjeKnjiga"  Background="#fae1e9" >
+        <Label x:Name="lblDatumIzdavanja" Content="Datum izdavanja:" HorizontalAlignment="Left" Margin="27,38,0,0" VerticalAlignment="Top" Width="106" FontWeight="DemiBold"/>
+        <DatePicker x:Name="dpDatumIzdavanja" HorizontalAlignment="Left" Margin="150,40,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblBibliotekar" Content="Bibliotekar:" HorizontalAlignment="Left" Margin="27,83,0,0" VerticalAlignment="Top" FontWeight="DemiBold"/>
+        <ComboBox x:Name="cbBibliotekar" HorizontalAlignment="Left" Margin="150,83,0,0" VerticalAlignment="Top" Width="120"  FontWeight="DemiBold"  DisplayMemberPath="Bibliotekar" SelectedValuePath="BibliotekarID"/>
+        <Label x:Name="lblClan" Content="Član:" HorizontalAlignment="Left" Margin="28,124,0,0" VerticalAlignment="Top" FontWeight="DemiBold"  RenderTransformOrigin="0.078,0.193"/>
+        <ComboBox x:Name="cbClan" HorizontalAlignment="Left" Margin="152,128,0,0" VerticalAlignment="Top" Width="120" FontWeight="DemiBold" DisplayMemberPath="Clan" SelectedValuePath="ClanID"/>
+        <Label x:Name="lblKnjiga" Content="Knjiga:" HorizontalAlignment="Left" Margin="26,171,0,0" VerticalAlignment="Top" FontWeight="DemiBold" RenderTransformOrigin="0.34,0.795"/>
+        <ComboBox x:Name="cbKnjiga" HorizontalAlignment="Left" Margin="150,175,0,0" VerticalAlignment="Top" Width="120" FontWeight="DemiBold" DisplayMemberPath="Naziv" SelectedValuePath="KnjigaID"/>
+        <Button x:Name="btnSacuvaj" Content="Sačuvaj" HorizontalAlignment="Left" Margin="28,227,0,0" VerticalAlignment="Top" Width="78" FontWeight="DemiBold" Click="btnSacuvaj_Click" BorderBrush="Black" Background="PaleVioletRed"/>
+        <Button x:Name="btnOtkazi" Content="Otkaži" HorizontalAlignment="Left" Margin="171,227,0,0" VerticalAlignment="Top" Width="81" FontWeight="DemiBold" Click="btnOtkazi_Click" BorderBrush="Black" Background="PaleVioletRed"/>
+
+    </Grid>
+</Window>

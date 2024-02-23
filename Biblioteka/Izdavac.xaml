@@ -1,0 +1,20 @@
+﻿<Window x:Class="Biblioteka.Izdavac"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Biblioteka"
+        mc:Ignorable="d"
+        Title="Izdavač" Height="200" Width="250">
+    <Grid x:Name="Izdavaci"  Background="#fae1e9">
+        <Label x:Name="lblNazivIzdavaca" Content="Naziv izdavača:" HorizontalAlignment="Left" Margin="24,49,0,0" 
+               VerticalAlignment="Top" FontWeight="DemiBold"/>
+        <TextBox x:Name="txtNazivIzdavaca" HorizontalAlignment="Left" Margin="120,53,0,0" TextWrapping="Wrap" 
+                 VerticalAlignment="Top" Width="103" FontWeight="DemiBold"/>
+        <Button x:Name="btnSacuvaj" Content="Sačuvaj" HorizontalAlignment="Left" Margin="25,102,0,0" 
+                VerticalAlignment="Top" Width="68" Click="btnSacuvaj_Click" FontWeight="DemiBold" BorderBrush="Black" Background="PaleVioletRed"/>
+        <Button x:Name="btnOtkazi" Content="Otkaži" HorizontalAlignment="Left" Margin="152,102,0,0" 
+                VerticalAlignment="Top" Width="71" RenderTransformOrigin="0.205,0.854" Click="btnOtkazi_Click" FontWeight="DemiBold" BorderBrush="Black" Background="PaleVioletRed"/>
+
+    </Grid>
+</Window>

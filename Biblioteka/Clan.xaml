@@ -1,0 +1,31 @@
+﻿<Window x:Class="Biblioteka.Clan"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Biblioteka"
+        mc:Ignorable="d"
+        Title="Član" Height="300" Width="300">
+    <Grid x:Name="frmClan" Background="#fae1e9" >
+        <Label x:Name="lblImeClana" Content="Ime člana: " HorizontalAlignment="Left" Margin="35,36,0,0"
+               VerticalAlignment="Top" FontWeight="DemiBold"/>
+        <TextBox x:Name="txtImeClana" HorizontalAlignment="Left" Margin="138,40,0,0" TextWrapping="Wrap" 
+                 VerticalAlignment="Top" Width="102" FontWeight="DemiBold"/>
+        <Label x:Name="lblPrezimeClana" Content="Prezime člana:" HorizontalAlignment="Left" Margin="35,75,0,0" 
+               VerticalAlignment="Top" FontWeight="DemiBold"  />
+        <TextBox x:Name="txtPrezimeClana" HorizontalAlignment="Left" Margin="138,79,0,0" TextWrapping="Wrap" 
+                 VerticalAlignment="Top" Width="102" FontWeight="DemiBold"/>
+        <Label x:Name="lblAdresaClana" Content="Adresa člana: " HorizontalAlignment="Left" Margin="35,112,0,0" 
+               VerticalAlignment="Top" FontWeight="DemiBold"/>
+        <TextBox x:Name="txtAdresaClana" HorizontalAlignment="Left" Margin="138,116,0,0" TextWrapping="Wrap" 
+                 VerticalAlignment="Top" Width="102" FontWeight="DemiBold"  />
+        <Label x:Name="lblBrojTelefona" Content="Broj telefona: " HorizontalAlignment="Left" Height="31" Margin="35,146,0,0"
+               VerticalAlignment="Top" Width="95" FontWeight="DemiBold" />
+        <TextBox x:Name="txtBrojTelefona" HorizontalAlignment="Left" Height="17" Margin="138,153,0,0" TextWrapping="Wrap" 
+                 VerticalAlignment="Top" Width="102" FontWeight="DemiBold"/>
+        <Button x:Name="btnSacuvaj" Content="Sačuvaj" HorizontalAlignment="Left" Margin="35,214,0,0" 
+                VerticalAlignment="Top" Width="73" Click="btnSacuvaj_Click" FontWeight="DemiBold" BorderBrush="Black" Background="PaleVioletRed" />
+        <Button x:Name="btnOtkazi" Content="Otkaži" HorizontalAlignment="Left" Margin="162,214,0,0" 
+                VerticalAlignment="Top" Width="78" Click="btnOtkazi_Click" FontWeight="DemiBold" BorderBrush="Black" Background="PaleVioletRed" />
+    </Grid>
+</Window>

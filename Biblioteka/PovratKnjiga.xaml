@@ -1,0 +1,21 @@
+﻿<Window x:Class="Biblioteka.PovratKnjiga"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Biblioteka"
+        mc:Ignorable="d"
+        Title="PovratKnjiga" Height="300" Width="300">
+    <Grid x:Name="frmPovratKnjiga" Background="#fae1e9" >
+        <Label x:Name="lblDatumVracanja" Content="Datum izdavanja:" HorizontalAlignment="Left" Margin="27,38,0,0" VerticalAlignment="Top" FontWeight="DemiBold"/>
+        <DatePicker x:Name="dpDatumVracanja" HorizontalAlignment="Left" Margin="161,38,0,0" VerticalAlignment="Top" Width="111" FontWeight="DemiBold"/>
+        <Label x:Name="lblBibliotekar" Content="Bibliotekar:" HorizontalAlignment="Left" Margin="27,79,0,0" VerticalAlignment="Top" FontWeight="DemiBold" />
+        <ComboBox x:Name="cbBibliotekar" HorizontalAlignment="Left" Margin="161,83,0,0" VerticalAlignment="Top" Width="111" FontWeight="DemiBold" SelectionChanged="cbBibliotekar_SelectionChanged" DisplayMemberPath="Bibliotekar" SelectedValuePath="BibliotekarID"/>
+        <Label x:Name="lblKnjiga" Content="Knjiga:" HorizontalAlignment="Left" Margin="32,126,0,0" VerticalAlignment="Top" FontWeight="DemiBold"/>
+        <ComboBox x:Name="cbKnjiga" HorizontalAlignment="Left" Margin="161,128,0,0" VerticalAlignment="Top" Width="111" FontWeight="DemiBold" SelectionChanged="cbKnjiga_SelectionChanged" DisplayMemberPath="Naziv" SelectedValuePath="KnjigaID"/>
+        <Label x:Name="lblClan" Content="Član:" HorizontalAlignment="Left" Margin="34,176,0,0" VerticalAlignment="Top" FontWeight="DemiBold"  RenderTransformOrigin="-0.324,0.333" Width="41"/>
+        <ComboBox x:Name="cbClan" HorizontalAlignment="Left" Margin="161,176,0,0" VerticalAlignment="Top" Width="111" FontWeight="DemiBold" RenderTransformOrigin="0.506,0.066" SelectionChanged="cbClan_SelectionChanged" DisplayMemberPath="Clan" SelectedValuePath="ClanID"/>
+        <Button x:Name="btnSacuvaj" Content="Sačuvaj" HorizontalAlignment="Left" Margin="27,232,0,0" VerticalAlignment="Top" FontWeight="DemiBold" RenderTransformOrigin="-0.308,0.473" Width="69" Click="btnSacuvaj_Click" BorderBrush="Black" Background="PaleVioletRed"/>
+        <Button x:Name="btnOtkazi" Content="Otkaži" HorizontalAlignment="Left" Margin="190,232,0,0" VerticalAlignment="Top" Width="82" FontWeight="DemiBold" Click="btnOtkazi_Click" BorderBrush="Black" Background="PaleVioletRed"/>
+    </Grid>
+</Window>

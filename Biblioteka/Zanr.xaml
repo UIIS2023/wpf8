@@ -1,0 +1,19 @@
+﻿<Window x:Class="Biblioteka.Zanr"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Biblioteka"
+        mc:Ignorable="d"
+        Title="Žanr" Height="200" Width="250">
+    <Grid x:Name="frmZanr"  Background="#fae1e9">
+        <Label x:Name="lblZanr" Content="Naziv žanra: " HorizontalAlignment="Left" Margin="22,49,0,0"
+               VerticalAlignment="Top" Grid.ColumnSpan="2" FontWeight="DemiBold" />
+        <TextBox x:Name="txtNazivZanra" HorizontalAlignment="Left" Margin="104,53,0,0" TextWrapping="Wrap" Text="" 
+                 VerticalAlignment="Top" Width="102" FontWeight="DemiBold"/>
+        <Button x:Name="btnSacuvaj" Content="Sačuvaj" HorizontalAlignment="Left" Margin="33,110,0,0" 
+                VerticalAlignment="Top" Width="66" FontWeight="DemiBold" Click="btnSacuvaj_Click" BorderBrush="Black" Background="PaleVioletRed" />
+        <Button x:Name="btnOtkazi" Content="Otkaži" HorizontalAlignment="Left" Margin="140,110,0,0"
+                VerticalAlignment="Top" Width="66" FontWeight="DemiBold" Click="btnOtkazi_Click"  BorderBrush="Black" Background="PaleVioletRed"/>
+    </Grid>
+</Window>

@@ -1,0 +1,29 @@
+﻿<Window x:Class="Biblioteka.Knjiga"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Biblioteka"
+        mc:Ignorable="d"
+        Title="Knjiga" Height="400" Width="300">
+    <Grid x:Name="Knjigaa"  Background="#fae1e9">
+        <Label x:Name="lblNazivKnjige" Content="Naziv knjige:" HorizontalAlignment="Left" Margin="39,35,0,0" VerticalAlignment="Top" FontWeight="DemiBold"/>
+        <TextBox x:Name="txtNazivKnjige" HorizontalAlignment="Left" Margin="150,39,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" FontWeight="DemiBold"/>
+        <Label x:Name="tblDostupnost" Content="Dostupnost:" HorizontalAlignment="Left" Margin="39,75,0,0" VerticalAlignment="Top" FontWeight="DemiBold"/>
+        <Label x:Name="lblZanr" Content="Žanr:" HorizontalAlignment="Left" Margin="39,116,0,0" VerticalAlignment="Top" Width="120" FontWeight="DemiBold"/>
+        <ComboBox x:Name="cbZanr" HorizontalAlignment="Left" Margin="150,118,0,0" VerticalAlignment="Top" Width="120" FontWeight="DemiBold" SelectionChanged="cbZanr_SelectionChanged" DisplayMemberPath="NazivZanra" SelectedValuePath="ZanrID"/>
+        <Label x:Name="lblIzdavac" Content="Izdavač:" HorizontalAlignment="Left" Margin="39,164,0,0" VerticalAlignment="Top" FontWeight="DemiBold"/>
+        <ComboBox x:Name="cbIzdavac" HorizontalAlignment="Left" Margin="150,168,0,0" VerticalAlignment="Top" Width="120" FontWeight="DemiBold" SelectionChanged="cbIzdavac_SelectionChanged" DisplayMemberPath="NazivIzdavaca" SelectedValuePath="IzdavacID"/>
+        <CheckBox x:Name="chbDostupnost" Content="" HorizontalAlignment="Left" Margin="159,80,0,0" VerticalAlignment="Top" FontWeight="DemiBold"/>
+        <Label x:Name="lblAutor" Content="Autor:" HorizontalAlignment="Left" Margin="39,211,0,0" VerticalAlignment="Top" FontWeight="DemiBold"/>
+        <ComboBox x:Name="cbAutor" HorizontalAlignment="Left" Margin="150,213,0,0" VerticalAlignment="Top" Width="120" FontWeight="DemiBold" SelectionChanged="cbAutor_SelectionChanged" DisplayMemberPath="Autor" SelectedValuePath="AutorID"/>
+        <Button x:Name="btnSacuvaj" Content="Sačuvaj" HorizontalAlignment="Left" Margin="39,283,0,0" VerticalAlignment="Top" Width="74" FontWeight="DemiBold" Click="btnSacuvaj_Click" BorderBrush="Black" Background="PaleVioletRed"/>
+        <Button x:Name="btnOtkazi" Content="Otkaži" HorizontalAlignment="Left" Margin="188,283,0,0" VerticalAlignment="Top" FontWeight="DemiBold" RenderTransformOrigin="0.5,-0.078" Width="82" Click="btnOtkazi_Click" BorderBrush="Black" Background="PaleVioletRed"/>
+
+    </Grid>
+</Window>
+
+    
+    
+    
+    

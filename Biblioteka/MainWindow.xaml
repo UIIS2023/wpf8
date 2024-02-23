@@ -1,0 +1,35 @@
+﻿<Window x:Class="Biblioteka.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Biblioteka"
+        mc:Ignorable="d"
+        Title="Biblioteka" Height="350" Width="730">
+    <Grid x:Name="frmMain" Background="#fae1e9" >
+        <DataGrid Name="dataGridCentralni" HorizontalAlignment="Center" VerticalAlignment="Center" Height="auto" Width="auto" IsReadOnly="True"
+              AlternatingRowBackground="PaleVioletRed"   CanUserAddRows="False" SelectionUnit="FullRow" SelectionMode="Single" FontWeight="DemiBold"/>
+        <StackPanel HorizontalAlignment="Center" Height="30"  VerticalAlignment="Top" Width="auto" Orientation="Horizontal" >
+            <Button x:Name="btnBibliotekari" Content="Bibliotekari" HorizontalAlignment="Left" Height="30" VerticalAlignment="Top" Width="75" Click="btnBibliotekari_Click" FontWeight="DemiBold" BorderBrush="Black" Background="PaleVioletRed"/>
+            <Button x:Name="btnClanovi" Content="Članovi" HorizontalAlignment="Left" Height="30" VerticalAlignment="Top" Width="75" Click="btnClanovi_Click" FontWeight="DemiBold" BorderBrush="Black" Background="PaleVioletRed" />
+            <Button x:Name="btnKnjige" Content="Knjige" HorizontalAlignment="Left" Height="30" VerticalAlignment="Top" Width="75" Click="btnKnjige_Click" FontWeight="DemiBold" BorderBrush="Black" Background="PaleVioletRed" />
+            <Button x:Name="btnAutori" Content="Autori" HorizontalAlignment="Left" Height="30" VerticalAlignment="Top" Width="75" Click="btnAutori_Click" FontWeight="DemiBold" BorderBrush="Black" Background="PaleVioletRed"/>
+            <Button x:Name="btnZanrovi" Content="Žanrovi" HorizontalAlignment="Left" Height="30" VerticalAlignment="Top" Width="75" Click="btnZanrovi_Click" FontWeight="DemiBold" BorderBrush="Black" Background="PaleVioletRed" />
+            <Button x:Name="btnIzdavaci" Content="Izdavač" Height="30" VerticalAlignment="Top" Width="98" Click="btnIzdavac_Click" FontWeight="DemiBold" BorderBrush="Black" Background="PaleVioletRed"/>
+            <Button x:Name="btnIzdavanjeKnjiga" Content="Izdavanje knjiga" Height="30" VerticalAlignment="Top" Width="98" Click="btnIzdavanjeKnjiga_Click" FontWeight="DemiBold" BorderBrush="Black" Background="PaleVioletRed"/>
+            <Button x:Name="btnVracanjeKnjiga" Content="Vraćanje knjiga" Height="30" VerticalAlignment="Top" Width="98" Click="btnVracanjeKnjiga_Click" FontWeight="DemiBold" BorderBrush="Black" Background="PaleVioletRed"/>
+
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Center" Height="30"  VerticalAlignment="Bottom" Width="360" Orientation="Horizontal" >
+            <Button x:Name="btnDodaj" Content="Dodaj" Width="120" Click="btnDodaj_Click" FontWeight="DemiBold" BorderBrush="Black" Background="PaleVioletRed"/>
+            <Button x:Name="btnIzmeni" Content="Izmeni" Width="120" Click="btnIzmeni_Click" FontWeight="DemiBold" BorderBrush="Black" Background="PaleVioletRed"/>
+            <Button x:Name="btnObrisi" Content="Obriši" Width="120" FontWeight="DemiBold" Click="btnObrisi_Click"  BorderBrush="Black" Background="PaleVioletRed"/>
+        </StackPanel>
+    </Grid>
+</Window>
+
+    
+    
+    
+    
+    
